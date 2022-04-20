@@ -8,7 +8,6 @@
     <title>MyResume Bootstrap Template - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -343,7 +342,7 @@
                             <div class="accordion" id="accordionAccenture">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOneAc">
-                                        <button class="accordion-button AAColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAC" aria-expanded="true" aria-controls="collapseOneAC">
+                                        <button class="accordion-button AAColor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAC" aria-expanded="true" aria-controls="collapseOneAC">
                                             #1 Virtual Data Scientist
                                         </button>
                                     </h2>
@@ -437,7 +436,7 @@
                             <div class="accordion" id="accordionInfosys">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOneIn">
-                                        <button class="accordion-button AAColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneIn" aria-expanded="true" aria-controls="collapseOneIn">
+                                        <button class="accordion-button AAColor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneIn" aria-expanded="true" aria-controls="collapseOneIn">
                                             #1 Singapore Land Authority (SLA)
                                         </button>
                                     </h2>
@@ -492,7 +491,7 @@
                             <div class="accordion" id="accordionBny">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOneBny">
-                                        <button class="accordion-button AAColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBny" aria-expanded="true" aria-controls="collapseOneBny">
+                                        <button class="accordion-button AAColor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBny" aria-expanded="true" aria-controls="collapseOneBny">
                                             #1 MLBilling Anomaly Detection – (Finance Project)
                                         </button>
                                     </h2>
@@ -547,7 +546,7 @@
                             <div class="accordion" id="accordionAd">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOneAd">
-                                        <button class="accordion-button AAColor" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAd" aria-expanded="true" aria-controls="collapseOneAd">
+                                        <button class="accordion-button AAColor collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAd" aria-expanded="true" aria-controls="collapseOneAd">
                                             #1 Employee Attendance System
                                         </button>
                                     </h2>
@@ -1097,6 +1096,16 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+           
+            $.get("https://azsi-fn-d-getgitrepositories.azurewebsites.net/api/GetGitReposByUser?code=KCVPKF0L6IM11zofjJrPe9LHuv5CddRDBIHzkizQphHfvp6g9wuPKg==", function (data) {
+                //$(".result").html(data);
+                alert(data);
+            });
+        });
+    </script>
 
 </body>
 
