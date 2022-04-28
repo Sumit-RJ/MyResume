@@ -1049,3 +1049,8 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+hr.solid {
+    border-top: 5px solid #0563bb;
+    margin-top:60px;
+}
