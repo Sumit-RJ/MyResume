@@ -1054,3 +1054,45 @@ hr.solid {
     border-top: 5px solid #0563bb;
     margin-top:60px;
 }
+.blueText {
+    color: #0563bb;
+    letter-spacing: 1px;
+}
+
+.AAColor {
+    color: #fff !important;
+    background: #2d4761 !important;
+}
+
+.themeColor {
+    color: #fff !important;
+    background: #0563bb !important;
+}
+
+.accordion-button::after {
+    background-color: white;
+    border-radius: 11px;
+}
+
+tr > td:first-child {
+    color: #2d4761 !important;
+    /*font-weight: 800;*/
+}
+
+.companyName {
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 22px;
+    color: white;
+    font-weight: 600;
+    font-size: small;
+}
+
+.resumeLink:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.textBlack {
+    color: black !important;
+}
